@@ -1,4 +1,8 @@
 = DocGist
+
+NOTE: DBuret: I just cloned the asciidoctor docgist project, added a minimalist static web server in go to allow a 'from scratch docker build', a Dockerfile, to get a docker image serving docgist on :80/docgist. Here follows original docgist readme.adoc
+
+
 Anders Nawroth
 
 DocGist is a URL proxy tool that converts AsciiDoc documents fetched from Gists (http://gist.github.com), GitHub repositories, Dropbox folders and other sources to HTML.
