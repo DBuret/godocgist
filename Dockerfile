@@ -1,8 +1,5 @@
 FROM scratch
-ADD staticwebserver /
-ADD index.html /
-ADD images /
-ADD js /
-ADD style /
-ADD gist /
+LABEL maintainer=David.buret@gmail.com 
+EXPOSE 80
+COPY staticwebserver  index.html images  js  style gist /
 CMD ["staticwebserver"]
