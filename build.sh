@@ -10,3 +10,5 @@ chmod 755 godocgist
 sudo docker build -t registry.buret.cc/dburet/docgist .
 
 sudo docker images
+
+docker push registry.buret.cc/dburet/docgist
