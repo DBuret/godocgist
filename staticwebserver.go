@@ -7,7 +7,9 @@ import (
 
 func main() {
 
-	http.Handle("/docgist", http.FileServer(http.Dir("/")))
+	var basepath = "/docgist/"
+
+	http.Handle(basepath, http.StripPrefix(basepath,(http.FileServer(http.Dir("/"))))
 
 	log.Fatal(http.ListenAndServe(":80", nil))
 }
